@@ -52,15 +52,15 @@ const Checkout = () => {
                 </div>
                 <h1 className="text-4xl font-bold mt-8">Shipping details</h1>
                 <form action="" className="flex flex-col lg:w-1/2 mt-6 mb-12">
-                    <label className="text-[1.1rem] text-gray-600 relative" htmlFor="">Full Name <span className="absolute text-red-700 text-[1.2rem]">*</span></label>
+                    <label className="text-[1.1rem] text-gray-600 relative" htmlFor="">Full Name <span className="absolute z-9 text-red-700 text-[1.2rem]">*</span></label>
                     <input type="text" className="border border-gray-300 w-full p-3 my-1 mb-5"/>
-                    <label className="text-[1.1rem] text-gray-600 relative" htmlFor="">Street address <span className="absolute text-red-700 text-[1.2rem]">*</span></label>
+                    <label className="text-[1.1rem] text-gray-600 relative" htmlFor="">Street address <span className="absolute z-9 text-red-700 text-[1.2rem]">*</span></label>
                     <input type="text" className="border border-gray-300 w-full p-3 my-1 mb-5"/>
-                    <label className="text-[1.1rem] text-gray-600 relative" htmlFor="">Town / City<span className="absolute text-red-700 text-[1.2rem]">*</span></label>
+                    <label className="text-[1.1rem] text-gray-600 relative" htmlFor="">Town / City<span className="absolute z-9 text-red-700 text-[1.2rem]">*</span></label>
                     <input type="text" className="border border-gray-300 w-full p-3 my-1 mb-5"/>
-                    <label className="text-[1.1rem] text-gray-600 relative" htmlFor="">Phone <span className="absolute text-red-700 text-[1.2rem]">*</span></label>
+                    <label className="text-[1.1rem] text-gray-600 relative" htmlFor="">Phone <span className="absolute z-9 text-red-700 text-[1.2rem]">*</span></label>
                     <input type="number" className="border border-gray-300 w-full p-3 my-1 mb-5"/>
-                    <label className="text-[1.1rem] text-gray-600 relative" htmlFor="">Email address<span className="absolute text-red-700 text-[1.2rem]">*</span></label>
+                    <label className="text-[1.1rem] text-gray-600 relative" htmlFor="">Email address<span className="absolute z-9 text-red-700 text-[1.2rem]">*</span></label>
                     <input type="email" className="border border-gray-300 w-full p-3 my-1 mb-5"/>
                 </form>
                 <h1 className="text-4xl font-bold my-8">Your order </h1>

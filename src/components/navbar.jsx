@@ -10,7 +10,7 @@ const Navbar = () => {
     const state = useSelector((state)=> state.cart.cartItems)
     const [style, setStyle] = useState('')
     const [style1, setStyle1] = useState('')
-    const mobile = 'absolute w-screen h-screen bg-[rgba(0,0,0,0.4)] top-27 left-0 flex justify-end'
+    const mobile = 'absolute w-screen h-screen bg-[rgba(0,0,0,0.4)] top-27 left-0 flex justify-end z-99'
     const hidden = 'hidden'
     const open = img3
     const close = img4
@@ -34,7 +34,7 @@ const Navbar = () => {
     return (
         <nav className="relative w-screen max-h-12 lg:h-24 flex items-end px-4 lg:px-20 pt-21 pb-6 justify-between">
             <div className={style}>
-                <div className="w-[84vw] h-[60vh] bg-cyan-900 text-white p-6 flex flex-col items-center gap-8">
+                <div className="w-[96vw] h-[100vh] bg-cyan-900 text-white p-6 flex flex-col items-center gap-8">
                     <Link onClick={toggle} className="w-full text-center font-medium p-3 border-b text-2xl hover:font-bold" to="/">Home</Link>
                     <Link onClick={toggle} className="w-full text-center font-medium p-3 border-b text-2xl hover:font-bold" to="/about">About</Link>
                     <Link onClick={toggle} className="w-full text-center font-medium p-3 border-b text-2xl hover:font-bold" to="/contact">Contact us</Link>

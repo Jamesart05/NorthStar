@@ -7,11 +7,12 @@ import img5 from "/src/assets/stacy.png"
 import img6 from "/src/assets/tiffany.png"
 import img7 from "/src/assets/james.png"
 import img8 from "/src/assets/testimonial.png"
+import img9 from "/src/assets/contact.jpg"
 
 const About  = () => {
     return(
         <>
-            <div className="bg-[url(/src/assets/hero.jpg)] h-[24rem] bg-cover bg-no-repeat p-20 flex items-center lg:items-end">
+            <div className=`bg-[url(${img9})] h-[24rem] bg-cover bg-no-repeat p-20 flex items-center lg:items-end`>
                 <h1 className="text-white text-3xl lg:text-5xl">ABOUT NORTHSTAR</h1>
             </div>
             <main className="w-screen p-4 lg:p-20 grid lg:flex items-center gap-8 lg:gap-12">
