@@ -44,7 +44,7 @@ const Checkout = () => {
 
     return(
         <>
-            <main className="pt-10 px-8 lg:p-20">
+            <main className="pt-10 px-4 lg:p-20">
                 <div className="flex">
                     <Link className="text-[1.1rem] text-gray-500 hover:text-black" to="/">HOME</Link>
                     <span className="px-1 text-gray-500">/</span>
@@ -87,7 +87,7 @@ const Checkout = () => {
                         <p className="text-[1.1rem]">Cash on delivery. Please contact us if you require assistance or wish to make alternate arrangements.</p>
                     </div>
                     <div className="flex justify-end mt-12">
-                        <button onClick={notify} className="bg-amber-600 text-white py-3 px-8 text-[1.2rem] hover:bg-amber-800 cursor-pointer">PLACE ORDER</button>
+                        <button onClick={notify} className="bg-amber-600 text-white py-3 px-4 text-[1.2rem] hover:bg-amber-800 cursor-pointer">PLACE ORDER</button>
                         <ToastContainer />
                     </div>
                 </div>

@@ -67,7 +67,7 @@ const ProductDetails = () => {
 
     return(
         <>
-            <main className="w-screen p-8 lg:p-20 lg:pr-40 lg:flex gap-12">
+            <main className="w-screen p-4 lg:p-20 lg:pr-40 lg:flex gap-12">
                 <div className="relative w-full lg:w-1/2 lg:h-[50rem]  lg:p-4">
                     <img className="w-full h-full" src={product.image} alt={product.name} />
                     <p className="absolute top-16 left-16 bg-amber-600 text-white font-bold w-fit px-1 py-2 rounded-[3rem]">-24%</p>

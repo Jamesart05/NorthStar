@@ -5,7 +5,7 @@ import { Link } from "react-router-dom"
 const ProductList = () => {
     return(
         <>
-            <main className="w-screen py-16 px-8">
+            <main className="w-screen py-16 px-4">
                 <h1 className="text-center mb-4 text-4xl font-medium">Discover NEW arrivals</h1>
                 <h4 className="text-center mb-24 text-[1.2rem]">Recently added shirts</h4>
                 <div className="w-full flex flex-wrap gap-16 lg:gap-6 items-center justify-center">

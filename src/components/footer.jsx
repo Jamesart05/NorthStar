@@ -1,3 +1,9 @@
+import img1 from "/src/assets/visa.png"
+import img2 from "/src/assets/mastercard.png"
+import img3 from "/src/assets/paypal.png"
+import img4 from "/src/assets/visa2.png"
+import img5 from "/src/assets/arrow.png"
+
 const Footer = () => {
     return (
         <>
@@ -29,20 +35,20 @@ const Footer = () => {
                         <p className="font-[500] text-center">GET IN THE KNOW</p>
                         <div className="flex gap-2">
                             <input className="w-[16rem] lg:w-full border-b py-3 px-8 my-4 placeholder:text-gray-600" type="email" placeholder="Enter email" />
-                            <button type="submit" className="cursor-pointer"><img src="/src/assets/arrow.png" className="h-6 hover:border" alt="submit" /></button>
+                            <button type="submit" className="cursor-pointer"><img src={img5} className="h-6 hover:border" alt="submit" /></button>
                         </div>
                     </div>
                 </div>
-                <div className="w-full flex flex-wrap gap-4 text-center lg:gap-0 justify-center lg:justify-between border-t border-gray-400 pt-8">
+                <div className="w-full flex flex-wrap gap-4 text-center lg:gap-0 justify-center lg:justify-between border-t border-gray-400 py-8">
                     <div>
                         <p className="font-medium">© 2020 NorthStar eCommerce.</p>
                         <p className="font-medium hover:cursor-pointer border-b-2 border-transparent hover:border-b-2 hover:border-gray-600">Privacy Policy <span className="ml-3">terms of Service</span></p>
                     </div>
-                    <div className="flex">
-                        <img className="w-[4rem]" src="/src/assets/visa.png" alt="visa" />
-                        <img className="w-[5rem]" src="/src/assets/mastercard.png" alt="mastercard" />
-                        <img className="w-[5rem]" src="/src/assets/paypal.png" alt="paypal" />
-                        <img className="w-[5rem]" src="/src/assets/visa2.png" alt="visa services" />
+                    <div className="hidden lg:flex">
+                        <img className="w-[4rem]" src={img1} alt="visa" />
+                        <img className="w-[5rem]" src={img2} alt="mastercard" />
+                        <img className="w-[5rem]" src={img3} alt="paypal" />
+                        <img className="w-[5rem]" src={img4} alt="visa services" />
                     </div>
                 </div>
             </footer>

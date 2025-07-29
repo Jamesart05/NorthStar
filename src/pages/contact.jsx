@@ -2,9 +2,9 @@ const Contact  = () => {
     return(
         <>
             <div className="bg-[url(/src/assets/contact.jpg)] h-[24rem] bg-cover bg-no-repeat p-20 flex items-center justify-center lg:justify-start lg:items-end">
-                <h1 className="text-white text-5xl">CONTACT US</h1>
+                <h1 className="text-white text-3xl lg:text-5xl">CONTACT US</h1>
             </div>
-            <main className="px-8 lg:px-20 pt-30 pb-12 lg:flex gap-16">
+            <main className="px-4 lg:px-20 pt-30 pb-12 lg:flex gap-16">
                 <div className="lg:w-2/3">
                     <h2 className="mb-6 text-gray-700 text-3xl font-bold">We would love to hear from you</h2>
                     <p className="text-gray-600">If you have any type of suggestions, you can contact us here. We would love to here from you.</p>
@@ -23,7 +23,7 @@ const Contact  = () => {
                             <label htmlFor="">Message</label>
                             <textarea className="w-full h-60 border-[1px] border-gray-300" name="message" id=""></textarea>
                         </div>
-                        <button className="bg-cyan-900 text-white text-[1.2rem] w-fit px-8 py-4 cursor-pointer hover:bg-cyan-700 mb-24 lg:mb-0" type="submit">SEND MESSAGE</button>
+                        <button className="bg-cyan-900 text-white text-[1.2rem] w-fit px-4 py-4 cursor-pointer hover:bg-cyan-700 mb-24 lg:mb-0" type="submit">SEND MESSAGE</button>
                     </form>
                 </div>
                 <div className="lg:w-1/3">

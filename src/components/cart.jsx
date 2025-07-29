@@ -44,7 +44,7 @@ const Cart = () => {
     
     return(
         <>
-            <main className="p-8 lg:p-20 lg:pt-10">
+            <main className="p-4 lg:p-20 lg:pt-10">
                 <div className="flex">
                     <Link className="text-[1.1rem] text-gray-500 hover:text-black" to="/">HOME</Link>
                     <span className="px-1 text-gray-500">/</span>
