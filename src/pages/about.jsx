@@ -12,14 +12,14 @@ import img9 from "/src/assets/contact.jpg"
 const About  = () => {
     return(
         <>
-            <div className=`bg-[url(${img9})] h-[24rem] bg-cover bg-no-repeat p-20 flex items-center lg:items-end`>
+            <div style={{backgroundImage: `url(/src/assets/contact.jpg)`}} className={`bg-cover bg-no-repeat p-20 flex items-center justify-center lg:justify-start h-[24rem] lg:items-end`}>
                 <h1 className="text-white text-3xl lg:text-5xl">ABOUT NORTHSTAR</h1>
             </div>
             <main className="w-screen p-4 lg:p-20 grid lg:flex items-center gap-8 lg:gap-12">
-                <div className="bg-[url(/src/assets/beauty.png)] h-[42rem] bg-cover bg-center bg-no-repeat flex justify-center items-end w-full lg:w-1/2 lg:p-20">
+                <div className="bg-[url(/src/assets/beauty.png)] h-[32rem] lg:h-[42rem] bg-cover bg-center bg-no-repeat flex justify-center items-end w-full lg:w-1/2 lg:p-20">
                     <Link className="mb-12 lg:mb-0  text-cyan-800 lg:text-[1.6rem] bg-white py-4 px-8 rounded-3xl hover:bg-cyan-700 hover:text-white" to="/products">BUY NOW</Link>
                 </div>
-                <div className="bg-[url(/src/assets/cool.png)] h-[42rem] bg-cover bg-center bg-no-repeat flex justify-center items-end w-full lg:w-1/2 lg:p-20">
+                <div className="bg-[url(/src/assets/cool.png)] h-[32rem] lg:h-[42rem] bg-cover bg-center bg-no-repeat flex justify-center items-end w-full lg:w-1/2 lg:p-20">
                     <Link className="mb-12 lg:mb-0  text-cyan-800 lg:text-[1.6rem] bg-white py-4 px-8 rounded-3xl hover:bg-cyan-700 hover:text-white" to="/products">BUY NOW</Link>
                 </div>
             </main>

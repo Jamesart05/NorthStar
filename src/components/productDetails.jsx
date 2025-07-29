@@ -66,6 +66,10 @@ const ProductDetails = () => {
         setPrice(prev => Math.round(prev - product.price))
     }
 
+    const add = () => {
+        product.quantity == 0 ? "" : <ToastContainer />
+    }
+
     return(
         <>
             <main className="w-screen p-4 lg:p-20 lg:pr-40 lg:flex gap-12">
@@ -90,7 +94,7 @@ const ProductDetails = () => {
                         <button onClick={()=>{decrement(product)}} className="border px-4 py-1 text-[1.4rem] flex items-center justify-center rounded cursor-pointer hover:bg-black hover:text-white">-</button>
                     </div>
                     <a onClick={()=>handleCart(product)} className="bg-cyan-800 text-white px-8 py-4 font-medium hover:bg-white hover:text-cyan-950 hover:border y-16 cursor-pointer" >{cartBtn}</a>
-                    <ToastContainer />
+                    {add}
                 </div>
             </main>
         </>

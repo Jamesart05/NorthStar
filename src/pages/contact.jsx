@@ -3,7 +3,7 @@ import img1 from "/src/assets/contact.jpg"
 const Contact  = () => {
     return(
         <>
-            <div className=`bg-[url(${img1})] h-[24rem] bg-cover bg-no-repeat p-20 flex items-center justify-center lg:justify-start lg:items-end`>
+            <div style={{backgroundImage: `url(/src/assets/contact.jpg)`}} className={`h-[24rem] bg-cover bg-no-repeat p-20 flex items-center justify-center lg:justify-start lg:items-end`}>
                 <h1 className="text-white text-3xl lg:text-5xl">CONTACT US</h1>
             </div>
             <main className="px-4 lg:px-20 pt-30 pb-12 lg:flex gap-16">
