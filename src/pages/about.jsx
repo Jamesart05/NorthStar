@@ -12,7 +12,7 @@ import img9 from "/src/assets/contact.jpg"
 const About  = () => {
     return(
         <>
-            <div style={{backgroundImage: `url(/src/assets/contact.jpg)`}} className={`bg-cover bg-no-repeat p-20 flex items-center justify-center lg:justify-start h-[24rem] lg:items-end`}>
+            <div style={{backgroundImage: `url(${img9})`}} className={`bg-cover bg-no-repeat p-20 flex items-center justify-center lg:justify-start h-[24rem] lg:items-end`}>
                 <h1 className="text-white text-3xl lg:text-5xl">ABOUT NORTHSTAR</h1>
             </div>
             <main className="w-screen p-4 lg:p-20 grid lg:flex items-center gap-8 lg:gap-12">
