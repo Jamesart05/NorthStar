@@ -60,6 +60,7 @@ const ProductDetails = () => {
             product.quantity -= 1
             setQty(product.quantity)
         }else{
+            setPrice(0)
             setQty(0)
         }
         setPrice(prev => Math.round(prev - product.price))
@@ -70,7 +71,7 @@ const ProductDetails = () => {
             <main className="w-screen p-4 lg:p-20 lg:pr-40 lg:flex gap-12">
                 <div className="relative w-full lg:w-1/2 lg:h-[50rem]  lg:p-4">
                     <img className="w-full h-full" src={product.image} alt={product.name} />
-                    <p className="absolute top-16 left-16 bg-amber-600 text-white font-bold w-fit px-1 py-2 rounded-[3rem]">-24%</p>
+                    <p className="absolute z-19 top-16 left-16 bg-amber-600 text-white font-bold w-fit px-1 py-2 rounded-[3rem]">-24%</p>
                 </div>
                 <div className="lg:w-1/2">
                     <h1 className="text-4xl font-bold my-6">{product.name}</h1>
@@ -79,7 +80,7 @@ const ProductDetails = () => {
                         <p className="text-[.8rem]">(15)</p>
                     </div>
                     <div className="relative my-6">
-                        <p className="text-2xl text-gray-400">${product.price} <span className="text-cyan-900 px-4" >${price.toFixed(2)}</span></p>
+                        <p className="text-2xl text-gray-400">${product.price} <span className="text-cyan-900 px-4" >${qty == 0 ? 0 : price.toFixed(2)}</span></p>
                         <span className="absolute w-18 h-[.1rem] top-[1.1rem] bg-gray-400"></span>
                     </div>
                     <p className="text-[1.1rem] text-gray-600">{product.description}.</p>

@@ -54,7 +54,7 @@ const Cart = () => {
                     <tr className="border-b-[.2px]  border-gray-300 h-[5rem]">
                         <th className="text-2xl font-medium">Product</th>
                         <th className="hidden lg:block  text-2xl pt-8 font-medium">Price</th>
-                        <th className="text-2xl font-medium">Quantity</th>
+                        <th className="text-2xl font-medium">Qty</th>
                         <th className="text-2xl font-medium">Total</th>
                         <th></th>
                     </tr>
