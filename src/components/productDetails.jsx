@@ -60,7 +60,7 @@ const ProductDetails = () => {
             product.quantity -= 1
             setQty(product.quantity)
         }else{
-            setPrice(0)
+            setPrice(product.price)
             setQty(0)
         }
         setPrice(prev => Math.round(prev - product.price))
