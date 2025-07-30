@@ -15,28 +15,28 @@ const Home = () => {
             <Hero/>
             <ProductList/>
             <section className="w-full px-4 lg:px-20 flex flex-wrap items-center lg:justify-between gap-8 lg:gap-0 my-24">
-                <div className="w-full lg:w-1/5 lg:flex items-start gap-6">
+                <div className="w-[40%] lg:w-1/5 lg:flex items-start gap-6">
                     <img src={img1} alt="shipping" />
                     <div>
                         <p className="my-3 lg:my-0 font-extrabold text-[1rem]">FREE SHIPPING</p>
                         <p className="my-3 text-[1.1rem] lg:my-2 text-gray-700">Enjoy free shipping on all orders above $100</p>
                     </div>
                 </div>
-                <div className="w-full lg:w-1/5 lg:flex items-start gap-6">
+                <div className="w-[40%] lg:w-1/5 lg:flex items-start gap-6">
                     <img src={img2} alt="support" />
                     <div>
                         <p className="my-3 font-extrabold text-[1rem]">SUPPORT 24/7</p>
                         <p className="my-3 text-[1.1rem] lg:my-2 text-gray-700">Our support is there to help you for queries</p>
                     </div>
                 </div>
-                <div className="w-full lg:w-1/5 lg:flex items-start gap-6">
+                <div className="w-[40%] lg:w-1/5 lg:flex items-start gap-6">
                     <img src={img3} alt="return" />
                     <div>
                         <p className="my-3 font-extrabold text-[1rem]">30 DAYS RETURN</p>
                         <p className="my-3 text-[1.1rem] lg:my-2 text-gray-700">Simply return it within 30 days for an exchange</p>
                     </div>
                 </div>
-                <div className="w-full lg:w-1/5 lg:flex items-start gap-6">
+                <div className="w-[40%] lg:w-1/5 lg:flex items-start gap-6">
                     <img src={img4} alt="secure" />
                     <div>
                         <p className="my-3 font-extrabold text-[1rem]">100% PAYMENT SECURE</p>
@@ -60,7 +60,7 @@ const Home = () => {
                 <main className="w-screen my-16 text-center">
                     <h1 className="text-center mb-4 text-4xl font-medium">Top Sellers</h1>
                     <h4 className="text-center mb-24 text-[1.2rem]">Browse Our Top Selling Products</h4>
-                    <div className="flex flex-wrap gap-6 w-full px-4 lg:px-0 items-center justify-center mb-16">
+                    <div className="flex flex-wrap gap-6 w-full px-4 lg:px-0 items-center justify-center mb-8 lg:mb-16">
                         {arr.map(product => {
                             return(
                                 <Link to={`/product-details/${product.id}`} className="w-full lg:w-[21.5%] flex flex-col items-center justify-center cursor-pointer hover:shadow-2xl transition-shadow" key={product.id}>
@@ -71,7 +71,7 @@ const Home = () => {
                             )
                         })}
                     </div>
-                    <Link className="bg-cyan-800 text-[1.1rem] text-white px-6 py-4 hover:bg-cyan-950" to="/products">SHOP NOW</Link>
+                    <Link className="bg-cyan-800 text-[1.1rem] text-white px-6 py-4  hover:bg-cyan-950" to="/products">SHOP NOW</Link>
                 </main>
             </main>
         </div>
